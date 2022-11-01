@@ -1,0 +1,31 @@
+
+.Pokemon {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #FFFCF2;
+    border-radius: 7px;
+
+        .pokemon-name {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        img { 
+            width: 100px;
+            margin-top: 20px;
+
+        }
+
+        .url {
+            width: 100%;
+            word-wrap: break-word;
+        }
+}
