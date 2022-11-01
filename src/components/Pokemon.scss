@@ -1,31 +1,34 @@
-
 .Pokemon {
-    
+
     display: flex;
     flex-direction: column;
     margin: 10px 10px;
     align-items: center;
     width: 100%;
     max-width: 300px;
+    min-width: 280px;
     padding: 15px;
     cursor: pointer;
     background-color: #FFFCF2;
     border-radius: 7px;
+    flex-grow: 1;
+    flex-shrink: 0;
 
-        .pokemon-name {
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+    .pokemon-img {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
         }
+    }
 
-        img { 
-            width: 100px;
-            margin-top: 20px;
+    .pokemon-name {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-        }
-
-        .url {
-            width: 100%;
-            word-wrap: break-word;
-        }
 }

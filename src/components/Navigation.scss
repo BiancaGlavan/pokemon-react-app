@@ -1,0 +1,29 @@
+.navigation {
+    background-color: #9A031E;
+    color: #fff;
+    padding: 10px;
+
+    .links {
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+    }
+
+    .logo {
+        text-transform: uppercase;
+        margin-right: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+}
