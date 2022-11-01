@@ -16,7 +16,7 @@ const Pokemon = ({ pokemon }: IPropsPokemon) => {
 
     return <div className="Pokemon">
         <h1 className="pokemon-name">{pokemon.name}</h1>
-        <p>Id: {id}</p>
+        <p><span>Id: </span> {id}</p>
         <div className="pokemon-img">
             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`} alt="" />
         </div>

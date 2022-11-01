@@ -1,6 +1,6 @@
 .navigation {
-    background-color: #9A031E;
-    color: #fff;
+    background-color: #FEFFFF;
+    color: #17252A;
     padding: 10px;
 
     .links {
@@ -9,8 +9,15 @@
 
         a {
             text-decoration: none;
-            color: #fff;
+            color: #17252A;
             margin: 0 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            &:hover {
+                color: #f05053;
+            }
         }
     }
 
@@ -19,7 +26,9 @@
         margin-right: 30px;
         font-weight: 700;
         letter-spacing: 1px;
-        color: #fff;
+        color: #f05053;
+        font-size: 20px;
+        
     }
 
     .menu {

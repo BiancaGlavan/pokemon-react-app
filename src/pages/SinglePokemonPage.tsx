@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { IPokemon } from "../components/Pokemon";
 import PokemonsList from "../components/PokemonsList";
 import './SinglePokemonPage.scss';
@@ -103,6 +103,12 @@ const SinglePokemonPage = () => {
 
     return <div className="SinglePokemonPage">
 
+        <div className="container">
+            <Link to={'/pokemons'}>
+            <button className="btn-single-page">Back</button>
+            </Link>
+            
+        </div>
         <div className="single-pokemon-container">
             <img src={getPokemonImg(pokemon)} alt="" />
             <p><span>Pokemon Name:</span> {pokemon?.name}</p>
@@ -118,7 +124,7 @@ const SinglePokemonPage = () => {
             <p><span>Id:</span> {pokemon?.id}</p>
         </div>
         <div className="container">
-            <h2>More from this type: </h2>
+            <p className="more-single-page">More from this type: </p>
             <PokemonsList pokemons={pokemons} />
         </div>
     </div>
