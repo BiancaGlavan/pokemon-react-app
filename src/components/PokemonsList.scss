@@ -1,0 +1,12 @@
+
+.PokemonsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+        margin: 10px;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+}
