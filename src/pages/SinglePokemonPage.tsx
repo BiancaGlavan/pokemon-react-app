@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Pagination from "../components/Pagination";
 import { IPokemon } from "../components/Pokemon";
 import PokemonsList from "../components/PokemonsList";
 import './SinglePokemonPage.scss';
@@ -57,6 +58,10 @@ const SinglePokemonPage = () => {
 
     const [pokemons, setPokemons] = useState<IPokemon[]>([]);
 
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
+    const perPage = 20;
+
 
     console.log(pokemonID);
     const baseURL = 'https://pokeapi.co/api/v2/pokemon/' + pokemonID;
@@ -81,6 +86,8 @@ const SinglePokemonPage = () => {
                 const newPokemonList = response.data.pokemon.map((el: any, idx: number) => el.pokemon);
                 console.log('new pokemon list: ', newPokemonList);
                 setPokemons(newPokemonList);
+                let pagesNr = Math.ceil(newPokemonList.length / perPage);
+                setTotalPages(pagesNr);
             });
 
 
@@ -125,7 +132,9 @@ const SinglePokemonPage = () => {
         </div>
         <div className="container">
             <p className="more-single-page">More from this type: </p>
-            <PokemonsList pokemons={pokemons} />
+
+            <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={setCurrentPage} />
+            <PokemonsList pokemons={pokemons.slice(perPage * currentPage - perPage, currentPage * perPage + 1)} />
         </div>
     </div>
 }

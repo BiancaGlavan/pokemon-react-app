@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .page-btn, .navigation-btn {
+        padding: 2px 7px;
+        margin-right: 5px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        color: #17252A;
+        cursor: pointer;
+
+        &.active {
+            background-color: #f05053;
+            color: #fff;
+        }
+
+        svg {
+            fill: #17252A;
+        }
+    }
+
+    .more {
+        margin: 0 10px;
+        color: #17252A;
+    }
+}
