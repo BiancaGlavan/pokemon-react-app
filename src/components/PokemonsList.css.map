@@ -1,1 +1,1 @@
-{"version":3,"sources":["PokemonsList.scss","PokemonsList.css"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,eAAA;EACA,uBAAA;EACA,mBAAA;ACAJ;ADEI;EACI,cAAA;ACAR","file":"PokemonsList.css"}
+{"version":3,"sources":["PokemonsList.scss","PokemonsList.css"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,eAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;ACAJ;ADEI;EACI,cAAA;ACAR","file":"PokemonsList.css"}

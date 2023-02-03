@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .pagination .page-btn, .pagination .navigation-btn {
   padding: 2px 7px;
