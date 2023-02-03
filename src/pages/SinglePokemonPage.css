@@ -3,8 +3,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 .SinglePokemonPage .more-single-page {
   color: #17252A;
@@ -30,7 +28,6 @@
   color: #FEFFFF;
 }
 .SinglePokemonPage .single-pokemon-container {
-  width: 100%;
   max-width: 400px;
   margin-top: 60px;
   padding: 10px;

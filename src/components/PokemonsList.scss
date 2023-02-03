@@ -3,9 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
     a {
         flex-shrink: 0;
-        flex-grow: 1;
     }
 }

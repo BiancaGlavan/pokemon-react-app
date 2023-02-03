@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .PokemonsList a {
   flex-shrink: 0;
-  flex-grow: 1;
 }/*# sourceMappingURL=PokemonsList.css.map */

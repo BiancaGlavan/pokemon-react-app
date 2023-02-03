@@ -7,7 +7,7 @@ const Navigation = () => {
   return <div className="navigation">
     <div className="container">
       <div className="menu"> 
-      <Link to={'/'}><span className="logo">Pokemon App</span></Link>
+      <Link to={'/'}><span className="logo">Pok App</span></Link>
 
         <div className="links">
           <Link to={'/'}>Home</Link>
