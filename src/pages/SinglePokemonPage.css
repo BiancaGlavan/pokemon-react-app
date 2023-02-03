@@ -1,0 +1,52 @@
+.SinglePokemonPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.SinglePokemonPage .more-single-page {
+  color: #17252A;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.SinglePokemonPage .btn-single-page {
+  border: none;
+  outline: none;
+  background-color: #FEFFFF;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-top: 10px;
+  color: #17252A;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.SinglePokemonPage .btn-single-page:hover {
+  background-color: #f05053;
+  color: #FEFFFF;
+}
+.SinglePokemonPage .single-pokemon-container {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 60px;
+  padding: 10px;
+  background-color: #FEFFFF;
+  border-radius: 7px;
+}
+.SinglePokemonPage .single-pokemon-container img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.SinglePokemonPage .single-pokemon-container p {
+  margin-top: 5px;
+  font-weight: 500px;
+  color: #17252A;
+}
+.SinglePokemonPage .single-pokemon-container p span {
+  font-weight: 700;
+  color: #17252A;
+}/*# sourceMappingURL=SinglePokemonPage.css.map */
